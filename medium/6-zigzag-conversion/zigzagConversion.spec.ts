@@ -1,6 +1,6 @@
 import {
   convert,
-} from "./ZigzagConversion";
+} from "./zigzagConversion";
 import { expect } from "chai";
 
 describe('6. Zigzag Conversion', () => {
