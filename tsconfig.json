@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "types": [
-      "mocha",
-      "node",
-    ],
-    "target": "es2022",
-  }
-}
