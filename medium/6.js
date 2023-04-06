@@ -1,10 +1,12 @@
+const assert = require('node:assert')
+
 /**
  * The string "PAYPALISHIRING" is written in a zigzag pattern on a given
  * number of rows like this: (you may want to display this pattern in a fixed
  * font for better legibility) and then read line by line: "PAHNAPLSIIGYIR"
  * Write the code that will take a string and make this conversion given a number of rows
  */
-function convert(s: string, numRows: number): string {
+const convert = (s, numRows) => {
   let matrix = []
   let line = 0
   let column = 0
@@ -42,6 +44,7 @@ function convert(s: string, numRows: number): string {
   return result
 }
 
-export {
-  convert
-}
+assert.equal(convert('PAYPALISHIRING', 3), 'PAHNAPLSIIGYIR')
+assert.equal(convert('PAYPALISHIRING', 4), 'PINALSIGYAHRPI')
+assert.equal(convert('A', 1), 'A')
+assert.equal(convert('AB', 1), 'AB')
